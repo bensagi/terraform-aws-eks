@@ -60,6 +60,7 @@ resource "aws_eks_cluster" "this" {
 
   dynamic "kubernetes_network_config" {
     # Not valid on Outposts
+
     for_each = local.create_outposts_local_cluster ? [] : [1]
 
     content {
