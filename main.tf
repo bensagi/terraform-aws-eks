@@ -57,7 +57,6 @@ resource "aws_eks_cluster" "this" {
     public_access_cidrs     = var.cluster_endpoint_public_access_cidrs
   }
 
-
   dynamic "kubernetes_network_config" {
     # Not valid on Outposts
 
