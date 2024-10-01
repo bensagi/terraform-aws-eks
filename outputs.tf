@@ -12,7 +12,6 @@ output "cluster_arn" {
 
   depends_on = [
     aws_eks_access_entry.this,
-    aws_eks_access_policy_association.this,
   ]
 }
 
