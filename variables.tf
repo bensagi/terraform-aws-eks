@@ -27,7 +27,7 @@ variable "cluster_name" {
 }
 
 
-asd
+as
 
 variable "cluster_version" {
   description = "Kubernetes `<major>.<minor>` version to use for the EKS cluster (i.e.: `1.27`)"
