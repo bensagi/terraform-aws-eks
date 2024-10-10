@@ -9,6 +9,8 @@ data "aws_iam_session_context" "current" {
   arn = data.aws_caller_identity.current.arn
 }
 
+
+
 locals {
   create = var.create && var.putin_khuylo
 
