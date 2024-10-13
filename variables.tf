@@ -129,6 +129,8 @@ variable "attach_cluster_encryption_policy" {
   default     = true
 }
 
+
+
 variable "cluster_tags" {
   description = "A map of additional tags to add to the cluster"
   type        = map(string)
