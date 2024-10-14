@@ -6,7 +6,6 @@ variable "create" {
 
 variable "tags" {
   description = "A map of tags to add to all resources"
-  type        = map(string)
   default     = {}
 }
 
@@ -16,6 +15,7 @@ variable "prefix_separator" {
   default     = "-"
 }
 
+
 ################################################################################
 # Cluster
 ################################################################################
@@ -23,8 +23,10 @@ variable "prefix_separator" {
 variable "cluster_name" {
   description = "Name of the EKS cluster"
   type        = string
-  default     = ""
-}
+  det     = ""
+} 
+
+asf
 
 variable "cluster_version" {
   description = "Kubernetes `<major>.<minor>` version to use for the EKS cluster (i.e.: `1.27`)"
@@ -123,6 +125,8 @@ variable "attach_cluster_encryption_policy" {
   type        = bool
   default     = true
 }
+
+
 
 variable "cluster_tags" {
   description = "A map of additional tags to add to the cluster"
@@ -578,7 +582,6 @@ variable "self_managed_node_group_defaults" {
 # EKS Managed Node Group
 ################################################################################
 
-variable "eks_managed_node_groups" {
   description = "Map of EKS managed node group definitions to create"
   type        = any
   default     = {}
